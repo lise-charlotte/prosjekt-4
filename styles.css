@@ -1,3 +1,8 @@
+:root {
+  --background-color: rgb(234, 234, 234);
+  --secondary-color: rgb(207, 207, 207);
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -9,14 +14,31 @@ body {
 ul {
   list-style-type: none;
   padding: 0;
+  gap: 15px;
 }
 
 li {
   margin: 5px 0;
 }
 
-.removeButton {
-  margin-left: 10px;
-  color: red;
+.remove-btn {
+  background-color: var(--background-color);
+  border: 1px solid grey;
+  border-radius: 2px;
   cursor: pointer;
+}
+
+.remove-btn:hover {
+  background-color: var(--secondary-color);
+}
+
+.addButton {
+  background-color: var(--background-color);
+  border: 1px solid grey;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.addButton:hover {
+  background-color: var(--secondary-color);
 }
